@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/03/29 Notes class]
+\ProvidesClass{notes}[2022/03/30 Notes class]
 
 % ==================== packages ==================== %
 
@@ -22,6 +22,10 @@
 \RequirePackage{microtype}                                                      % for good spacing
 \RequirePackage{xcolor}                                                         % for colors
 \RequirePackage{xifthen}                                                        % for conditionals and `\isempty`
+\RequirePackage{tikz-cd}
+\usetikzlibrary{arrows, automata, positioning}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat = 1.17}
 
 % ==================== page setup ==================== %
 
