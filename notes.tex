@@ -1,9 +1,74 @@
 \documentclass{notes}
+% \usepackage{showkeys}
 
-\class{MATH 131BH (Real Analysis)}
+\class{DEPT 101 (Class)}
 
 \begin{document}
+\section{Section}
 
-hi
+\subsection{Subsection}
+
+\begin{defn}
+  This is a \textbf{definition}.
+\end{defn}
+
+\begin{lem}
+  This is a lemma.
+  \begin{equation}
+    a + b = c.
+  \end{equation}
+\end{lem}
+
+\begin{note}
+  This is a note.
+\end{note}
+
+\begin{thm}[Theorem]
+  This is a named theorem.
+  \begin{equation} \label{eq:1.1.2}
+    c = a + b.
+  \end{equation}
+\end{thm}
+
+\begin{prf}
+  Left as an exercise.
+\end{prf}
+
+\begin{eg}
+  This is an example: $a = 1$, $b = 2$, and $c = 3$.
+\end{eg}
+
+\begin{cor}
+  This is a corollary.
+  \begin{equation}
+    c - b = a.
+  \end{equation}
+\end{cor}
+
+\begin{prf}
+  Subtracting $b$ from both sides of \eqref{eq:1.1.2}, we have
+  \begin{align}
+    c - b &= a + b - b \nonumber \\ 
+    &= a.
+  \end{align}
+\end{prf}
+
+\subsection{Another subsection}
+
+\begin{thm}[Another]
+  This is another theorem.
+\end{thm}
+
+\begin{rmk}
+  This is a remark.
+\end{rmk}
+
+\section{Another section}
+
+\subsection{Subsection of another section}
+
+\begin{lem}
+  This is another lemma.
+\end{lem}
 
 \end{document}
