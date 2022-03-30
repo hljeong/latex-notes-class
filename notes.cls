@@ -9,6 +9,7 @@
 \RequirePackage[margin = 1in]{geometry}                                         % just copying over from template... maybe i can guess what this does
 \RequirePackage{newpxtext}                                                      % palatino?
 \RequirePackage{newpxmath}                                                      % palatino.
+\RequirePackage{bm}
 \RequirePackage{amsmath}                                                        % of course
 \RequirePackage{amssymb}                                                        % this gives `\mathbb` and internally loads `amsfonts` and maybe does other stuff
 \RequirePackage{esint}                                                          % fancy integrals
