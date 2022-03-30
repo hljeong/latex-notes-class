@@ -187,6 +187,7 @@
 
 \newenvironment{eg}
 {
+  \refstepcounter{cnt}
   \textbf{Example \thecnt.}
 }{}
 
