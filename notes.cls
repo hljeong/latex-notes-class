@@ -65,7 +65,8 @@
 
 \pagestyle{fancy}                                                               % fancy = good :sunglasses:
 
-\lhead{\@class{}}                                                               % actual header content
+\lhead{}
+\chead{\@class{}}
 \rhead{}
 
 % ==================== title page ==================== %
