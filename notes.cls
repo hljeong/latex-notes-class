@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/03/30 Notes class]
+\ProvidesClass{notes}[2022/03/31 Notes class]
 
 % ==================== packages ==================== %
 
@@ -168,7 +168,7 @@
       topline = true,
       frametitleaboveskip = \dimexpr-\ht\strutbox\relax
     }
-    \begin{mdframed}\label{#1:\thecnt}
+    \begin{mdframed}\phantomsection\label{#1:\thecnt}
   }{
     \end{mdframed}
   }
@@ -193,7 +193,7 @@
 \newenvironment{eg}
 {
   \refstepcounter{cnt}
-  \textbf{Example \thecnt.}
+  \textbf{Example \thecnt.}\phantomsection\label{eg:\thecnt}
 }{}
 
 % ==================== note & remark ==================== %
