@@ -36,7 +36,7 @@
 \let \endolditemize \enditemize
 \renewenvironment{itemize}{\begin{olditemize}[topsep = 0pt]}{\end{olditemize}}
 \let \oldenumerate \enumerate
-\let \oldendenumerate \endenumerate
+\let \endoldenumerate \endenumerate
 \renewenvironment{enumerate}{\begin{oldenumerate}[topsep = 0pt]}{\end{oldenumerate}}
 
 % ==================== variables ==================== %
