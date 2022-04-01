@@ -32,6 +32,12 @@
 \linespread{1.2}                                                                % this is more comfortable
 \setlength{\parindent}{0pt}                                                     % dont need em
 \setlength{\parskip}{0.8ex}                                                     % wow i didnt know default for `\parskip` was 0
+\let \olditemize \itemize
+\let \endolditemize \enditemize
+\renewenvironment{itemize}{\begin{olditemize}[topsep = 0pt]}{\end{olditemize}}
+\let \oldenumerate \enumerate
+\let \oldendenumerate \endenumerate
+\renewenvironment{enumerate}{\begin{oldenumerate}[topsep = 0pt]}{\end{oldenumerate}}
 
 % ==================== variables ==================== %
 
