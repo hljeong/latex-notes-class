@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/03/31 Notes class]
+\ProvidesClass{notes}[2022/04/01 Notes class]
 
 % ==================== packages ==================== %
 
