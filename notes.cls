@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/04/01 Notes class]
+\ProvidesClass{notes}[2022/04/04 Notes class]
 
 % ==================== packages ==================== %
 
@@ -78,7 +78,8 @@
 % ==================== title page ==================== %
 
 \renewcommand{\maketitle}{
-  \thispagestyle{plain}                                                         % no header on this page
+  \thispagestyle{empty}                                                         % no header or page number on this page
+  \setcounter{page}{0}
   
   \vspace*{20ex}
   \begin{center}
@@ -196,10 +197,12 @@
 
 % ==================== example ==================== %
 
-\newenvironment{eg}
+\newenvironment{eg}[1][]
 {
   \refstepcounter{cnt}
-  \textbf{Example \thecnt.}\phantomsection\label{eg:\thecnt}
+  \ifstrempty{#1}{\textbf{Example \thecnt.}}%
+  {\textbf{Example \thecnt~(#1).}}%
+  \phantomsection\label{eg:\thecnt}
 }{}
 
 % ==================== note & remark ==================== %
