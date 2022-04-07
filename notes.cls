@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/04/04 Notes class]
+\ProvidesClass{notes}[2022/04/07 Notes class]
 
 % ==================== packages ==================== %
 
@@ -185,6 +185,7 @@
 \newtheoremenvironment{lem}{Lemma}
 \newtheoremenvironment{thm}{Theorem}
 \newtheoremenvironment{cor}{Corollary}
+\newtheoremenvironment{prop}{Proposition}
 
 % ==================== proof ==================== %
 
