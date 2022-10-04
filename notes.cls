@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}                                                        % what even is 2e
 \LoadClassWithOptions{article}                                                  % load? or not? with options? or not?
-\ProvidesClass{notes}[2022/04/07 Notes class]
+\ProvidesClass{notes}[2022/10/04 Notes class]
 
 % ==================== packages ==================== %
 
@@ -25,7 +25,8 @@
 \RequirePackage{tikz-cd}
 \usetikzlibrary{arrows, automata, positioning}
 \RequirePackage{pgfplots}
-\pgfplotsset{compat = 1.17}
+\pgfplotsset{compat = 1.16}
+\RequirePackage{mleftright}
 
 % ==================== page setup ==================== %
 
